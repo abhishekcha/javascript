@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // currying in js by bind method
+        let multi=function(a,b){
+            console.log(a*b);
+            
+        }
+        let multi2=multi.bind(this,2);
+        multi2(5);
+        // 2nd way by function closures
+        let  multiply=function(x){
+            return function(y){
+                console.log(x*y);
+                
+            }
+        }
+        let multiply2=multiply(5);
+        multiply2(5);
+
+    </script>
+</body>
+</html>

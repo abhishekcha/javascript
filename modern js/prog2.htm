@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let student = {
+            fn: "anjali",
+            ln: "chaudhary",
+            age: 26,
+            address: "delhi",
+            state: "delhi"
+        }
+        function updateAddress() {
+            const newaddress = {
+                address: "noida",
+                state: "up",
+                mob_num:"9670440690",
+            }   
+            student = {
+                ...student,
+                ...newaddress
+            }
+            alert("updated");
+        }
+        function getdata() {
+            console.log(student);
+        }
+    </script>
+    <button type="button" onclick="updateAddress()">update Address</button>
+    <button type="button" onclick="getdata()">Get Data</button>
+</body>
+
+</html>

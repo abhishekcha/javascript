@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var student = [
+            { id: 100, name: "meha", year: 1999 },
+            { id: 101, name: "anjali", year: 2000 },
+            { id: 102, name: "rupali", year: 2001 },
+            { id: 103, name: "sneha", year: 2002 },
+            { id: 104, name: "meha", year: 2003 },
+        ]
+        //const uniqueNames = [];
+        //const obj1 = {};
+        // for(let obj of student)
+        // {
+        //     console.log(obj.name);
+        //     console.log(obj1.name);// print undefined
+
+        // }
+
+        // for (let obj of student) {
+        //     if (obj1[obj.name]==undefined) {
+        //         uniqueNames.push(obj.name);
+        //         obj1[obj.name]=true;
+        //     }
+        // }
+
+        // uniqueNames=student.map(item=>item.name).filter((value,index,arr) => console.log(value,index,arr.lastIndexOf(value)));
+        // console.log(uniqueNames);
+
+
+        const set=new Set();
+        set.add(1);
+        set.add(2);
+        set.add(3);
+        set.add(4);
+        set.add(4);
+        set.add(3);
+        set.add(5);
+        set.add("anjali");
+        console.log(set);
+        console.log(set.size);
+        //console.log(set[1]);//wrong
+        console.log(set.has("anjali"));
+        set.delete(1);
+    </script>
+</body>
+
+</html>

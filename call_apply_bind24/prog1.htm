@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // var student={
+        //     fn:"anjali",
+        //     ln:"chaudhary",
+        //     getname:function(){
+        //         console.log(`my name is ${this.fn} ${this.ln}`);
+
+        //     }
+        // }
+        // student.getname();
+
+        // var student={
+        //     fn:"rupali",
+        //     ln:"chaudhary",
+        //     getname:function(){
+        //         console.log(`my name is ${this.fn} ${this.ln}`);
+
+        //     }
+        // }
+        // student.getname();
+
+        // var student={
+        //     fn:"anjali",
+        //     ln:"chaudhary",
+        //     getname:function(){
+        //         console.log(`my name is ${this.fn} ${this.ln}`);
+
+        //     }
+        // } 
+        // var student2={
+        //     fn:"rupali",
+        //     ln:"chaudhary",
+        // }
+
+        // var student3={
+        //     fn:"shivani",
+        //     ln:"maurya",
+        // }
+        // student.getname.call(student2);
+        // student.getname.call(student3);
+
+        //BIND METHOD
+
+        // var student={
+        //     fn:"anjali",
+        //     ln:"chaudhary",
+        //     getname:function(){
+        //         console.log(`my name is ${this.fn} ${this.ln}`);
+        //     }
+        // }
+        // var student2=student;
+        // student.getname();
+        // student2.getname();
+
+        var student={
+            fn:"anjali",
+            ln:"chaudhary",
+            getname:function(){
+                console.log(`my name is ${this.fn} ${this.ln}`);
+            }
+        }
+        var student4={
+            fn:"pallavi",
+            ln:"rao",
+        }
+        var student2=student.getname.bind(student4);
+        console.log(student2);
+        student2();
+         
+         
+    </script>
+</body>
+</html>

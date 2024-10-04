@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .sty1{
+            background-color: green;
+            font-size: 50px;
+        }
+        .sty2{
+            color: white;
+            background-color: blue;
+            font-size: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h2 id="hid">hello anjali</h2>
+    <input type="button" value="submit" onclick="fun1()"/>
+
+    <script>
+        // function fun1(){
+        // //     document.getElementById("hid").setAttribute('style','color:red; font-size:50px');
+
+
+        var ele=document.getElementById("hid");
+        if(ele.hasAttribute('class') && ele.getAttribute('class')=="sty1"){
+            ele.removeAttribute('class');
+            ele.setAttribute('class',"sty2");
+        }
+        else{
+            ele.setAttribute('class','sty1');
+        }
+
+
+    </script>
+</body>
+</html>

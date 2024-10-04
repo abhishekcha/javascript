@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // class student{
+        //     constructor(){
+        //         console.log("c called");
+
+        //     }
+        //     fun1(){
+        //         console.log("fun1 called");
+
+        //     }
+        // }
+        // let s1=new student();
+        // //s1.fun1();
+
+        //........................................
+
+        //base class || parent class || super class
+        // class student{
+        //     constructor(fn,ln,age){
+        //         this.fn=fn;
+        //         this.ln=ln;
+        //         this.age=age;
+        //     }
+        //     getDetails(){
+        //         console.log(`my name is ${this.fn} ${this.ln} and age is ${this.age}`);
+
+        //     }
+        // }
+        // // child class || sub class || derived class
+        // class student2 extends student{
+
+        // }
+        // let s1=new student("anajli","chaudhary",26);
+        // s1.getDetails();
+
+        //.............................................
+
+        // class student{
+        //     constructor(){
+        //         console.log("hi anjali i love you");
+
+        //     }
+        // }
+        // class student2 extends student{
+        //     constructor(){
+        //         super();
+        //     }
+        // }
+        // let s1=new student2();
+        //let s2=new student();
+
+        //.......................
+
+        class student {
+            constructor() {
+                console.log("super called");
+                this.fn = "anjali";
+                this.ln = "sahani";
+                this.age = 27;
+            }
+            getDetails() {
+                console.log(`my name is ${this.fn} ${this.ln} and age is ${this.age}`);
+            }
+        }
+        class student2 extends student {
+            constructor() {
+                super();// use most of place in react JS
+                  console.log("student2 called");
+
+            }
+        }
+        let s1 = new student2();
+        s1.getDetails();
+
+    </script>
+</body>
+
+</html>

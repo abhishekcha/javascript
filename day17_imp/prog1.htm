@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // var marks=[5,8,3,2,9,4];
+        // //var res=marks.every(v => v>3);
+
+        // console.log(res);
+
+        // var student=[
+        //     {id:100,name:"anjali",age:2},
+        //     {id:101,name:"rupali",age:17},
+        //     {id:102,name:"rupa",age:8},
+        //     {id:103,name:"manjeeta",age:7},
+        //     {id:104,name:"usha",age:10},
+        // ]
+        //var res=student.every(v=>v.age>=18);
+        // var res=student.some(v=>v.age>=18);
+        // console.log(res);
+
+
+        var student=[
+            {id:100,name:"anjali",marks:[10,20,30,40,50]},
+            {id:101,name:"rupali",marks:[50,30,30,40,60]},
+            {id:102,name:"rupa",marks:[50,40,30,40,60]},
+            {id:103,name:"manjeeta",marks:[50,20,30,70,60]},
+            {id:104,name:"usha",marks:[1,2,3,4,5]},
+        ]
+         student.forEach(s=>{
+            s.marks.forEach((mark,index)=>{
+                if(mark<30){
+                    s.marks[index]="Fail";
+                }
+            });
+         });
+        console.log(student);
+
+
+    </script>
+</body>
+</html>

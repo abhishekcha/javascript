@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button type="button" onclick="getData()">Get Data</button>
+    <button type="button" onclick="updateData()">Upadate Data</button>
+    <button type="button" onclick="deleteData()">Delete Data</button>
+    <button type="button" onclick="clearData()">Clear Data</button>
+    <button type="button" onclick="checkData()">Check Data</button>
+    <script>
+        function getData(){
+            console.log(localStorage.getItem("emp"));
+            //console.log(sessionStorage.getItem("empId"));
+            
+            console.log(localStorage.getItem("empId"));
+            ///console.log(sessionStorage.getItem("emp"));
+        }
+        function updateData(){
+            localStorage.setItem("empId","localStorage-102");
+        }
+        function deleteData(){
+            localStorage.removeItem("empId");
+        }
+        function clearData(){
+            localStorage.clear();
+            sessionStorage.clear();
+        }
+        function checkData(){
+            //console.log(localStorage.length);
+            
+        }
+    </script>
+</body>
+</html>

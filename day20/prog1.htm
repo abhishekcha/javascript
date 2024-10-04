@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // if(window.localStorage){
+        //     console.log("supported");  
+        // }
+        // else{
+        //     console.log("not supported")
+        //}
+        function doLogin(){
+            if(window.localStorage){
+                localStorage.setItem("empId","100");
+                sessionStorage.setItem("empId","101");
+                let obj={
+                    id:100,
+                    name:"anjali",
+                    num:9670440690,
+                }
+                localStorage.setItem("emp",JSON.stringify(obj));
+                sessionStorage.setItem("emp",JSON.stringify(obj));
+            }
+        }
+    </script>
+    <!--<button type="button" onclick="this.style.display='none'">hide Button</button> -->
+    <button type="button" onclick="doLogin()">login</button>
+</body>
+</html>

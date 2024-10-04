@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // const name=["anju","manju","sanju","kanju"];
+        // const[n1,n2,n3,n4]=name;
+        // console.log(n2);
+
+        // function fun1(){
+        //     console.log("hi");
+        //     console.log("anjali");
+        //     console.log("manu");
+        //     console.log("anuu");            
+        // }
+        // fun1();
+
+        function* fun1(){
+            console.log("hi");
+            console.log("anjali");
+            yield;
+            console.log("manu");
+            console.log("anuu");            
+        }
+        let gen=fun1();
+        gen.next();
+        gen.next();
+    </script>
+</body>
+</html>
